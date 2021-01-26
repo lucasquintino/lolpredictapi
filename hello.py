@@ -23,6 +23,7 @@ def home():
 	return render_template('home.html')
 
 @app.route('/predict',methods=['POST','GET'])
+@cross_origin(origin='*',headers=['Content-Type','Authorization'])
 def predict():
 
     pkl_file = open('model.pkl', 'rb')
