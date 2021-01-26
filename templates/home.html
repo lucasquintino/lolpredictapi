@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<title>LoL-Prediction App</title>
+<link rel="stylesheet" href="{{url_for('static', filename='styles/main.css')}}" />
+<body>
+<div class="content">
+	<h1>LOL PREDICTOR</h1>
+	<form action = "/getdelay" method="POST">
+		<div>
+			<p> Select goldat15:</p>
+			<input name="goldat15" type ="text" value="-10000" /> 
+		</div>
+		<div>
+			<p> Select xpat15: </p>
+			<input name="xpat15" type ="text" value="-10000" /> 
+		</div>
+		<div>
+			<p> Select csat15:</p>
+			<input name="csat15" type ="text" value="10000" /> 
+		</div>
+		<div>
+			<p> Select opp_goldat15: </p>
+			<input name="opp_goldat15" type ="text" value="0" /> 
+		</div>
+		<div>
+			<p> Select opp_xpat15: </p>
+			<input name="opp_xpat15" type ="text" value="10000" /> 
+		</div>
+		<div>
+			<p> Select opp_csat15:</p>
+			<input name="opp_csat15" type ="text" value="-100" /> 
+
+		</div>
+		<div>
+			<p> Select golddiffat15: </p>
+			<input name="golddiffat15" type ="text" value="0" />
+
+		</div>
+		<div>		
+			<p> Select xpdiffat15:</p>
+			<input name="xpdiffat15" type ="text" value="100" /> 
+		</div>
+		<div>
+			<p> Select csdiffat15:</p> 
+			<input name="csdiffat15" type ="text" value="0" /> 
+		</div>
+		
+		
+		<p> <input type ="submit" value="submit" /> </p>
+	</form>
+</div>
+
+</body>
+</html>
